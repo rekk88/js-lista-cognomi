@@ -1,4 +1,6 @@
 // console.log("scriptttttttttttttttttttt");
+
+//sezione mail
 var lista = ["mail@lol.com", "viafarlocca@indirizzo.com", "numero22@gmail.com"];
 var trovato=false;
 
@@ -6,7 +8,7 @@ var trovato=false;
 var mail = prompt("inserisci la mail : ");
 
 if(mail.indexOf("@") != -1){ // controllo sull'inserimento
-    for(var i=0 ; i < lista.length ; i++){
+    for(let i=0 ; i < lista.length ; i++){
         // console.log(lista[i]);
         if(mail == lista[i]){
             trovato = true;
@@ -25,4 +27,7 @@ else{ //se la stringa inserita non è una mail
     document.getElementById("output").innerHTML="mail non corretta";
 }
 
+//sezione Cognomi
+
+var cognome = prompt("inserisci il cognome : ");
 
