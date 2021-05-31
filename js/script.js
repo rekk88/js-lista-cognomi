@@ -28,6 +28,13 @@ else{ //se la stringa inserita non è una mail
 }
 
 //sezione Cognomi
-
+var cognomi = ["Bianchi","Neri","Rossi","Verdi","Gialli"];
 var cognome = prompt("inserisci il cognome : ");
+cognome = cognome.charAt(0).toUpperCase() + cognome.slice(1); // al fine di ordinare rendo la prima lettera maiuscola indipendetemente che lo sia già o meno
+console.log(cognome);
+cognomi.push(cognome); //inserimento input a fine array
+console.log(cognomi); //visualizzazione array non ordinato
+cognomi.sort(); //ordinamento array
+console.log(cognomi); //visualizzazione array ordinato
+
 
