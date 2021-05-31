@@ -38,3 +38,11 @@ cognomi.sort(); //ordinamento array
 console.log(cognomi); //visualizzazione array ordinato
 
 
+document.getElementById("output").innerHTML="Lista : " + cognomi;
+
+//ricerco il cognome inserito
+for(let i=0; i < cognomi.length ; i++){
+    if(cognome == cognomi[i]){ //supponendo che siano tutti diversi altrimenti l'ouput è da mettere fuori dal for
+        document.getElementById("inserito").innerHTML="L'utente "+ cognome + " è in posizione" + (i+1);
+    }
+}
