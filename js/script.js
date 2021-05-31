@@ -4,7 +4,8 @@ var trovato=false;
 
 //input
 var mail = prompt("inserisci la mail : ");
-if(mail.indexOf("@") != -1){
+
+if(mail.indexOf("@") != -1){ // controllo sull'inserimento
     for(var i=0 ; i < lista.length ; i++){
         // console.log(lista[i]);
         if(mail == lista[i]){
@@ -20,7 +21,7 @@ if(mail.indexOf("@") != -1){
         document.getElementById("output").innerHTML="non sei in lista , via di qui !!!";
     }
 }
-else{
+else{ //se la stringa inserita non è una mail 
     document.getElementById("output").innerHTML="mail non corretta";
 }
 
